@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deteksi Forensik Gambar Digital</title>
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --dark-gray: #333333;
+            --medium-gray: #6c757d;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+        }
+        
+        .btn:hover {
+            background-color: #2667cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(58, 134, 255, 0.4);
+        }
+        
+        .forensics-info {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            max-width: 900px;
+        }
+        
+        .forensics-info h2 {
+            color: var(--dark-gray);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .info-card {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .info-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        
+        .info-card p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--white);
+            color: var(--medium-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .forensics-info {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Forensik Gambar Digital</h1>
+            <p>Website ini membantu anda Mengidentifikasi Copy-Move Forgery & Splicing menggunakan Analisis Forensik Digital dengan Deep Learning!</p>
+            <a href="/check" class="btn">Deteksi Gambar Anda</a>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="forensics-info">
+            <h2>Forensik Gambar Digital</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus convallis condimentum.
+                Quisque ultricies ligula ut neque pharetra venenatis. Pellentesque vel eros leo. Nam ultricies mattis euismod.
+                Phasellus sed mi in nisl lobortis condimentum eget vel nulla. Etiam sit amet ornare urna, eget tincidunt dolor.
+                Vivamus suscipit ante nisl, at fermentum ex tempor vitae. Aliquam erat volutpat. Maecenas tincidunt leo commodo dapibus malesuada.</p>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Copy-Move Forgery</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus convallis condimentum.
+                Quisque ultricies ligula ut neque pharetra venenatis. Pellentesque vel eros leo. Nam ultricies mattis euismod.
+                Phasellus sed mi in nisl lobortis condimentum eget vel nulla. Etiam sit amet ornare urna, eget tincidunt dolor.
+                Vivamus suscipit ante nisl, at fermentum ex tempor vitae. Aliquam erat volutpat. Maecenas tincidunt leo commodo dapibus malesuada.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Splicing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus convallis condimentum.
+                Quisque ultricies ligula ut neque pharetra venenatis. Pellentesque vel eros leo. Nam ultricies mattis euismod.
+                Phasellus sed mi in nisl lobortis condimentum eget vel nulla. Etiam sit amet ornare urna, eget tincidunt dolor.
+                Vivamus suscipit ante nisl, at fermentum ex tempor vitae. Aliquam erat volutpat. Maecenas tincidunt leo commodo dapibus malesuada.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>Error Level Analysist</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus convallis condimentum.
+                Quisque ultricies ligula ut neque pharetra venenatis. Pellentesque vel eros leo. Nam ultricies mattis euismod.
+                Phasellus sed mi in nisl lobortis condimentum eget vel nulla. Etiam sit amet ornare urna, eget tincidunt dolor.
+                Vivamus suscipit ante nisl, at fermentum ex tempor vitae. Aliquam erat volutpat. Maecenas tincidunt leo commodo dapibus malesuada.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Deep Learning/CNN</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus finibus convallis condimentum.
+                Quisque ultricies ligula ut neque pharetra venenatis. Pellentesque vel eros leo. Nam ultricies mattis euismod.
+                Phasellus sed mi in nisl lobortis condimentum eget vel nulla. Etiam sit amet ornare urna, eget tincidunt dolor.
+                Vivamus suscipit ante nisl, at fermentum ex tempor vitae. Aliquam erat volutpat. Maecenas tincidunt leo commodo dapibus malesuada.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 Sistem Deteksi Forensik Gambar Digital | Skripsi Irzia Fitri Muthmainah</p>
+        </div>
+    </footer>
+</body>
+</html>
